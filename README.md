@@ -1,5 +1,6 @@
 TIC TAC TOE
 
+<<<<<<< HEAD
 # Process 
 - The first thing I did was breaking down the problems into smaller problems. For example, how to make the layout of the game, how to start the game, what's the function for letting the users know who won the game etc. 
 - To begin with, I sketched how I wanted the game to look on paper then designed it on Canva. 
@@ -13,3 +14,5 @@ TIC TAC TOE
 - No problems so far
 
 // command, shift, v to preview 
+=======
+>>>>>>> 1a9c60c373d07b43cbbace929a331de5e8f04c6a
