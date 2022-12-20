@@ -1,19 +1,15 @@
+TIC TAC TOE
 
-# Heading 1
-Lorem ipsum dolor
-## Heading 2
-### Heading 3
-###### Heading 6
+# Process 
+- The first thing I did was breaking down the problems into smaller problems. For example, how to make the layout of the game, how to start the game, what's the function for letting the users know who won the game etc. 
+- To begin with, I sketched how I wanted the game to look on paper then designed it on Canva. 
+- Then I started designing the layout and features with HTML and CSS.
+- Then started JavaScript. 
+# Programs 
+- JavaScript 
+- HTML 
+- CSS
+# Problems 
+- No problems so far
 
-- List item 1
-1. List item 1
-
-```javascript
-for (let block of blocks) {
-block.addEventListener('click', handleClick, {once: true})
-}
-```
-
-```html 
-<p class="markdown">markdown is cool</p>
-links = img
+// command, shift, v to preview 
