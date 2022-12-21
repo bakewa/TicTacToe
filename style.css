@@ -1,64 +1,52 @@
+body {
+    text-align: center;
+    /* background-image: url("https://media.tenor.com/ji5Mpqf8APoAAAAC/kikis-delivery-service-grass.gif"); */
+    /* min-height: 100%; */
+    /* background-size: cover; */
+    /* background-position: center center; */
+    /* background-repeat: no-repeat; */
+}
 
-  .grid {
-    width: 75px;
-    height: 75px;
-    border: 2px solid;
-    line-height: 75px;
-    font-size: 50px;
-    justify-content: center;
-    cursor: pointer;
-  }
-  #cellContainer {
+h1 {
+    font-size: 60px;
+    font-family: monospace;
+    color: #58abba;
+    margin: 20px auto;
+}
+
+.gameContainer {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    width: 235px;
-    margin: auto;
-    background-color: #91d2dd;
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center; 
-  } 
- #gridContainer {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-  h1 {
-    text-align: center;
+    width: 306px;
+    margin: 20px auto;
     color: #58abba;
-  }
- button {
-    display: block;
-    margin: auto;
-    background-color: #58abba;
-    width: 200px;
-    height: 50px;
-    font-size: 25px;
-    color: #000000;
-    box-shadow: 2px 2px 2px 2px #69605a;
- 
- }
- button:hover {
+}
+
+.cell {
+    font-family: monospace;
+    font-size: 50px;
+    width: 100px;
+    height: 100px;
     cursor: pointer;
- }
-body {
-    background-image: url("https://i.gifer.com/Sk6w.gif");
+    line-height: 100px;
+    border: 2px solid #e2e267;
+}
+.gameStatus {
+    font-size: 50px;
+    color: #58abba;
+    margin: 20px auto;
 }
 
-
-/* Might add these images later */
-/* .images-chihiro {
-    width: 200px;
-    height: 200px;
-    float: left;    
-    margin: 0 0 0 15px;
-
+.restartBtn {
+    background-color: #58abba;
+    font-size: 30px;
+    font-family: monospace;
+    color: #e2e267;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    border: 5px solid #58abba;
+    box-shadow: 2px 2px 2px 2px #0f0f10
+    
 
 }
-.images-totoro {
-    width: 200px;
-    height: 200px;
-    float: right;    
-    margin: 0 0 0 15px;
-} */
-

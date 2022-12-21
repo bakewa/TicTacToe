@@ -1,24 +1,48 @@
-const grids = document.querySelectorAll(".grid")
-const status = document.querySelector("#status")
-const restartBtn = document.querySelector("#restartBtn")
-
-const winConditions = [
+// Cell index
+const winningConditions = [
     [0, 1, 2],
     [3, 4, 5],
     [6, 7, 8],
     [0, 3, 6],
     [1, 4, 7], 
     [2, 5, 8],
-    [0, 4, 8], 
-    [2, 4, 6]
 ]
-let options = ["", "", "", "", "", "", "", "", ""]
-let currentPlayer = "X"
-let running = false;
+let currentPlayer = "player1";
+const gameState = {
+    winningConditions: winningConditions,
+    currentPlayer: currentPlayer,
+};
 
-function initializeGame() {
-    grids.forEach(grid => grids.addEventListener("click", gridClicked))
-    restartBtn.addEventListener("click", restartGame);
-    statusText.textContent = `${currentPlayer}s turn`;
-} 
+// Initialize the game
+function initializeGame(){
+    gameState.winningConditions = ["", "", "", "", "", "", "", "", ""]
+    gameState.currentPlayer = "player1";
+}
+
+// click function
+const cells = document.querySelectorAll(".cell");
+cells.forEach(cell => {
+    cell.addEventListener('click', handleClick);
+});
+
+function handleClick(event) {
+    const cell = event.target;
+    cell.textContent = currentPlayer;
+    currentPlayer = (currentPlayer === "X") ? "O" : "X"
+}
+
+// Players take turns
+function makeMove(row,col) {
+    if (gameState.winningConditions[row][col]) {
+        console.log("Occupied");
+        return;
+    }
+    if (gameState.currentPlayer === "player1") {
+        gameState.winningConditions[row][col] = "X";
+    } else {
+        gameState.winningConditions[row][col] = "O";
+    }
+}
+
+
 
