@@ -28,8 +28,17 @@ For this project, we were asled to make a simple Tic Tac Toe game using the prog
 - A scoreboard to keep track of users points 
 - Customisable Avatars/Icons and customisable names 
 
-# Problems 
-- No problems so far
+# Difficulties
+- Implementing JavaScript as it's not my strongest point. 
+- Implementing the result function to let the user know who won and if the game was a draw. 
+- Implementing the audio so that you could hear the audio. For the audio element, I used a simple control bar that has the play/pause button and volume and the keyword to make that appear is controls which is to be used inside the opening tag of the audio element
+
+Example:
+
+opening audio tag with source inside 
+src="/Desktop/Kikideliveryservice.mp3" controls 
+
+closing audio tag
 
 # Ending Credits 
-Shout out to the internet. 
+Shout out to the internet.
