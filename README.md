@@ -29,10 +29,7 @@ For this project, we were asled to make a simple Tic Tac Toe game using the prog
 - Customisable Avatars/Icons and customisable names 
 
 # Problems 
-Problems that I encountered in making this game was:
-- Making the click function work
-- Implementing the winning conditions
-- And just doing the whole JavaScript since it's not my strong point. 
+- No problems so far
 
 # Ending Credits 
 Shout out to the internet. 
