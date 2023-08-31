@@ -6,7 +6,7 @@ let running = true;
 const currentPlayerTurn = () => `${currentPlayer}'s turn`;
 
 statusDisplay.innerHTML = currentPlayerTurn();
-////////////////////////
+
 // These are the indexes of the cells. First 3 are horizontal, then 
 // next 3 are vertical and last 2 are diagonal. 
 const winningConditions = [
@@ -74,21 +74,18 @@ function runCellClick(clickedCellEvent) {
     runResult();
 }
 
+document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', runCellClick));
+
+
 // For the restart button
-function runRestart(){
+function runRestart() {
     running = true;
     currentPlayer = "X";
     gameState = ["", "", "", "", "", "", "", "", ""];
     statusDisplay.innerHTML = currentPlayerTurn();
     document.querySelectorAll('.cell').forEach(cell => cell.innerHTML = "");
 }
-////////////////////////
-// For da music
-function playAudio() {
-    audio.play();
-}
-function pauseAudio() {
-    audio.pause();
-}
-/////////////////////////
-document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', runCellClick));
+
+const restartButton = document.querySelector('.restartBtn');
+restartButton.addEventListener('click', runRestart);
+
