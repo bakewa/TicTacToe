@@ -1,14 +1,7 @@
-body {
-    text-align: center;
-    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4d94eabf-4257-437f-a08d-5ee63b69705f/ddj4ebw-d3292465-fc61-4fec-acb4-c36bbba2b475.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRkOTRlYWJmLTQyNTctNDM3Zi1hMDhkLTVlZTYzYjY5NzA1ZlwvZGRqNGVidy1kMzI5MjQ2NS1mYzYxLTRmZWMtYWNiNC1jMzZiYmJhMmI0NzUuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.xFs_R_kiojU_Or58ZknRJhfhfxVrKYW8aWN3RZR7RyM");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 h1 {
     font-size: 60px;
     font-family: monospace;
-    color: white;
     margin: 20px auto;
 
 }
@@ -32,9 +25,7 @@ h1 {
 }
 .game-status {
     font-size: 50px;
-    font-family: monospace;
     color: rgb(255, 255, 255);
-    margin: 20px auto;
 }
 
 .restartBtn {
@@ -47,10 +38,4 @@ h1 {
     cursor: pointer;
     box-shadow: 2px 2px 2px 2px white;
 
-}
-
-audio {
-    width: 40%;
-    margin: 0 auto;
-    display: table;
 }

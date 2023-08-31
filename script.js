@@ -3,8 +3,6 @@ const statusDisplay = document.querySelector(".game-status");
 let currentPlayer = "X";
 let gameState = ["", "", "", "", "", "", "", "", ""];
 let running = true; 
-let audio = document.querySelector(".myAudio");
-
 const currentPlayerTurn = () => `${currentPlayer}'s turn`;
 
 statusDisplay.innerHTML = currentPlayerTurn();
@@ -25,14 +23,12 @@ function runCellPlayed(clickedCell, clickedCellIndex) {
     gameState[clickedCellIndex] = currentPlayer;
     clickedCell.innerHTML = currentPlayer;
 }
-/////////////////////////
 
 // Changing players 
 function runPlayerChange() {
     currentPlayer = currentPlayer === "X" ? "O" : "X";
     statusDisplay.innerHTML = currentPlayerTurn();
 }
-////////////////////////
 
 // Check for the winner and if theres a draw + message to let the user know 
 const winner = () => `Player ${currentPlayer} wins!`;
@@ -66,7 +62,6 @@ function runResult() {
     }
     runPlayerChange();
 }
-////////////////////////
 
 // Click function for the cells
 function runCellClick(clickedCellEvent) {
@@ -78,7 +73,6 @@ function runCellClick(clickedCellEvent) {
     runCellPlayed(clickedCell, clickedCellIndex);
     runResult();
 }
-////////////////////////
 
 // For the restart button
 function runRestart(){
@@ -98,4 +92,3 @@ function pauseAudio() {
 }
 /////////////////////////
 document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', runCellClick));
-document.querySelector('.restartBtn').addEventListener('click', runRestart);
